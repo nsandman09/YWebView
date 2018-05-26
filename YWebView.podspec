@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
                        WKWebView, unlike UIWebView, doesn't support cookie persistency and sharing. There are multiple solutions on the Internet to deal with issue. YWebView combines the existing solutions to make WKWebView behave like the Old UIWebView.
                        DESC
 
-  s.homepage         = 'https://github.com/haifengkao/YWebView'
+  s.homepage         = 'https://github.com/nsandman09/YWebView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Hai Feng Kao' => 'haifeng@cocoaspice.in' }
-  s.source           = { :git => 'https://github.com/haifengkao/YWebView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/nsandman09/YWebView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '8.0'
 
   s.source_files = 'YWebView/Classes/**/*'
   
@@ -37,6 +37,6 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'AppKit', 'Cocoa', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
